@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jelajah Bentang Alam Indonesia · PGSDUPICIBIRU2026 #dHeTik</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fffaf5;--card:#fff;--ink:#2d3b4a;--sub:#63758a;--line:#f1e4dc;--soft:#fff1e6;--sky1:#d6ecfb;--sky2:#fffaf5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17222e;--card:#223243;--ink:#f1f4f8;--sub:#b3c2d1;--line:#38506a;--soft:#2b4157;--sky1:#21506e;--sky2:#17222e}}
+:root[data-theme="dark"]{--bg:#17222e;--card:#223243;--ink:#f1f4f8;--sub:#b3c2d1;--line:#38506a;--soft:#2b4157;--sky1:#21506e;--sky2:#17222e}
+*{box-sizing:border-box}
+html{scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Nunito,system-ui,sans-serif;font-size:18px;line-height:1.6}
+h1,h2,h3{font-family:'Baloo 2',Nunito,sans-serif;line-height:1.15;margin:0 0 .4em}
+h1{font-size:clamp(2.1rem,7vw,3.6rem);font-weight:800}
+h2{font-size:clamp(1.6rem,4.5vw,2.2rem)}
+h3{font-size:1.2rem}
+.top{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:3px solid var(--line);padding:8px 12px;display:flex;gap:8px;align-items:center}
+.logo{flex:none;width:40px;height:40px;border-radius:50%;border:2px dashed var(--sub);display:grid;place-items:center;font-size:.6rem;font-weight:800;color:var(--sub);text-align:center;line-height:1}
+.lg{flex:none;width:44px;height:44px;object-fit:contain}
+table{width:100%;border-collapse:collapse;font-size:.95rem;margin-top:8px}td,th{border:2px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--soft)}
+textarea{width:100%;background:var(--card);color:var(--ink);border:3px solid var(--line);border-radius:12px;padding:8px;font:inherit;margin:4px 0 10px}
+.embed iframe{width:100%;min-height:320px;border:0;border-radius:18px}
+.nav{display:flex;gap:6px;overflow-x:auto;flex:1;padding:2px}
+.nav a{flex:none;text-decoration:none;font-weight:800;font-size:.92rem;padding:6px 14px;border-radius:99px;background:var(--soft);color:var(--ink);border:2px solid transparent}
+.nav a[aria-current="page"]{background:var(--c);color:var(--on);border-color:var(--c)}
+.nav a:focus-visible,.btn:focus-visible,.land:focus-visible,.opt:focus-visible,.dot:focus-visible,select:focus-visible{outline:3px solid #f59e2e;outline-offset:2px}
+.wrap{max-width:900px;margin:0 auto;padding:0 18px}
+.theme{flex:none;width:40px;height:40px;border-radius:50%;border:2px solid var(--line);background:var(--soft);font-size:1.2rem;cursor:pointer}
+.theme:focus-visible{outline:3px solid #f59e2e;outline-offset:2px}
+.pg[hidden]{display:none}
+.band{background:var(--c);color:var(--on);padding:26px 0 22px;border-radius:0 0 28px 28px}
+.band .tag{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--on);color:var(--c);font:800 1.6rem 'Baloo 2';margin-bottom:6px}
+.band p{margin:0;max-width:600px}
+.hero{background:linear-gradient(var(--sky1),var(--sky2));padding-top:28px}
+.hero p{max-width:560px;color:var(--sub);font-size:1.1rem}
+.hero svg{display:block;width:100%;height:auto;margin-top:10px}
+.card{background:var(--card);border:3px solid var(--line);border-radius:22px;padding:18px 20px;margin:16px 0}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.ph{border:3px dashed var(--c,#2f6fdc);border-radius:18px;padding:22px;text-align:center;color:var(--sub);background:var(--soft);font-weight:700}
+.ph b{display:block;font-size:2rem}
+.role{display:grid;gap:10px;grid-template-columns:1fr 1fr}
+.role div{border-radius:16px;padding:12px 14px;font-size:.98rem}
+.role .g{background:#e3efff;color:#173a6e}.role .s{background:#ffe9c7;color:#5c3500}
+@media (max-width:560px){.role{grid-template-columns:1fr}}
+.role strong{display:block;font-family:'Baloo 2';font-size:1.05rem}
+.btn{display:inline-block;border:0;border-radius:14px;padding:11px 20px;font:800 1rem Nunito;background:var(--c);color:var(--on);text-decoration:none;cursor:pointer}
+.lands{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}
+.land{border:3px solid var(--line);background:var(--card);border-radius:18px;padding:12px 6px;font:800 1rem Nunito;color:var(--ink);cursor:pointer;text-align:center}
+.land span{display:block;font-size:2.4rem;line-height:1.1}
+.land[aria-pressed="true"]{border-color:var(--c);background:var(--soft)}
+.opt{display:block;width:100%;text-align:left;margin:6px 0;padding:10px 14px;border-radius:14px;border:3px solid var(--line);background:var(--card);color:var(--ink);font:700 1rem Nunito;cursor:pointer}
+.opt.right{background:#c9efd6;border-color:#2f9e5b;color:#12402a}.opt.wrong{background:#fbd5c8;border-color:#e8643a;color:#5a1f0b}
+select{width:100%;background:var(--card);color:var(--ink);border:3px solid var(--line);border-radius:12px;padding:8px;font:inherit}
+.path{display:flex;justify-content:space-between;gap:6px;margin:18px 0 8px}
+.dot{flex:1;text-align:center;text-decoration:none;color:var(--ink);font-weight:800;font-size:.8rem;line-height:1.2}
+.dot i{display:grid;place-items:center;width:52px;height:52px;margin:0 auto 4px;border-radius:50%;background:var(--c);color:var(--on);font:800 1.5rem 'Baloo 2';font-style:normal;box-shadow:0 4px 0 rgba(0,0,0,.18)}
+.dot:nth-child(even) i{transform:translateY(14px)}
+.dot:nth-child(even) span{display:block;margin-top:14px}
+.note{font-size:.92rem;color:var(--sub)}
+.foot{margin-top:36px;padding:22px 0 40px;background:var(--soft);font-size:.92rem;color:var(--sub);text-align:center}
+.foot b{color:var(--ink)}
+.nextrow{display:flex;justify-content:space-between;gap:10px;margin:26px 0}
+ul.tidy{padding-left:22px;margin:.3em 0}
+.card{border-color:color-mix(in srgb,var(--c,#2f6fdc) 50%,var(--line));box-shadow:0 5px 0 color-mix(in srgb,var(--c,#2f6fdc) 35%,var(--line))}
+.band{position:relative;overflow:hidden;background:radial-gradient(circle at 10% 25%,rgba(255,255,255,.55) 0 16px,transparent 17px),radial-gradient(circle at 90% 75%,rgba(255,255,255,.45) 0 26px,transparent 27px),radial-gradient(circle at 70% 20%,rgba(255,255,255,.4) 0 10px,transparent 11px),var(--c)}
+.band .wrap{position:relative;z-index:1}
+.deco{position:absolute;inset:0;pointer-events:none;opacity:.6}
+.deco span{position:absolute;font-size:2.2rem}
+.hero h1{background:linear-gradient(90deg,#5b8def,#ef7f6a,#eba02c,#5aa84a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.grid>.card:nth-child(3n+1){background:color-mix(in srgb,#b8e0a0 55%,var(--card))}
+.grid>.card:nth-child(3n+2){background:color-mix(in srgb,#ffd3a3 55%,var(--card))}
+.grid>.card:nth-child(3n){background:color-mix(in srgb,#a9d6f5 55%,var(--card))}
+.land:nth-child(1){--lc:#f6a38a}.land:nth-child(2){--lc:#ffc78a}.land:nth-child(3){--lc:#a8d98a}.land:nth-child(4){--lc:#f4dc7a}.land:nth-child(5){--lc:#9cc3f2}.land:nth-child(6){--lc:#8fdcd2}
+.land{border-color:var(--lc)}
+.land[aria-pressed="true"]{background:color-mix(in srgb,var(--lc) 28%,var(--card));transform:scale(1.05)}
+@media (prefers-reduced-motion:no-preference){
+.dot i{position:relative;animation:bob 2.6s ease-in-out infinite;transition:transform .2s}
+.dot:nth-child(2) i{animation-delay:.3s}.dot:nth-child(3) i{animation-delay:.6s}.dot:nth-child(4) i{animation-delay:.9s}.dot:nth-child(5) i{animation-delay:1.2s}.dot:nth-child(6) i{animation-delay:1.5s}
+.dot:hover i{transform:scale(1.12)}
+.cloud{animation:drift 26s linear infinite}.cloud2{animation-duration:38s;animation-delay:-12s}
+.sun{animation:spin 30s linear infinite}
+.bird{animation:fly 9s ease-in-out infinite}
+.wave{animation:slosh 3s ease-in-out infinite}
+.deco span{animation:float 4s ease-in-out infinite}
+.band .tag{animation:wiggle 2.4s ease-in-out infinite}
+.pg:not([hidden]) .card{animation:pop .4s both}
+.land{transition:transform .15s,background .15s}
+@keyframes bob{50%{top:-7px}}
+@keyframes drift{from{transform:translateX(-160px)}to{transform:translateX(900px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes fly{0%,100%{transform:translate(0,0)}50%{transform:translate(70px,-14px)}}
+@keyframes slosh{50%{transform:translateX(12px)}}
+@keyframes float{50%{transform:translateY(-10px) rotate(8deg)}}
+@keyframes wiggle{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+@keyframes pop{from{transform:scale(.94);opacity:0}to{transform:scale(1);opacity:1}}
+}
+</style>
+</head>
+<body>
+<header class="top">
+<img class="lg" src="logo-prodi.png" alt="Logo prodi PGSD UPI Kampus Cibiru" onerror="this.outerHTML='<div class=logo>logo prodi</div>'">
+<nav class="nav" id="nav" aria-label="Menu halaman"></nav>
+<button class="theme" id="theme" aria-label="Ganti mode terang atau gelap">🌙</button>
+</header>
+
+<main>
+<!-- BERANDA -->
+<section class="pg" id="pg-beranda" style="--c:#a9cdf5;--on:#1d3557">
+<div class="hero"><div class="wrap">
+<h1>Jelajah Bentang Alam Indonesia</h1>
+<p>Halo, Penjelajah Cilik! Di sini kamu akan melihat, bermain, berdiskusi, lalu membuat karyamu sendiri. Siap menjelajah?</p>
+<svg viewBox="0 0 800 220" role="img" aria-label="Gambar gunung, sawah, sungai, dan danau">
+<g class="sun" style="transform-box:fill-box;transform-origin:center"><g stroke="#ffcc80" stroke-width="5" stroke-linecap="round"><path d="M680 4v12M680 80v12M636 48h12M712 48h12M649 17l8 8M703 71l8 8M711 17l-8 8M657 71l-8 8"/></g><circle cx="680" cy="48" r="30" fill="#ffe082"/><circle cx="670" cy="42" r="3" fill="#a65a00"/><circle cx="690" cy="42" r="3" fill="#a65a00"/><path d="M668 55q12 10 24 0" stroke="#a65a00" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+<g class="cloud" fill="#fff"><ellipse cx="120" cy="40" rx="40" ry="16"/><ellipse cx="148" cy="34" rx="28" ry="16"/></g>
+<g class="cloud cloud2" fill="#fff" opacity=".9"><ellipse cx="380" cy="70" rx="34" ry="13"/><ellipse cx="402" cy="64" rx="22" ry="12"/></g>
+<path class="bird" d="M300 40q10-12 20 0q10-12 20 0" stroke="#23364a" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M0 150 L150 40 L250 120 L330 70 L470 160 L470 220 L0 220Z" fill="#a8d5cf"/>
+<path d="M120 60 L150 40 L180 62 L150 58Z" fill="#fff"/>
+<path d="M300 85 L330 70 L355 88 L330 84Z" fill="#fff"/>
+<path d="M330 150 Q520 110 800 150 L800 220 L330 220Z" fill="#c5e6a0"/>
+<path d="M0 185 Q200 160 420 190 T800 185 L800 220 L0 220Z" fill="#a5d6a7"/>
+<path d="M560 220 Q600 190 570 165 Q540 150 600 135" stroke="#9fd3f2" stroke-width="16" fill="none" stroke-linecap="round"/>
+<ellipse cx="170" cy="200" rx="90" ry="14" fill="#9fd3f2"/><path class="wave" d="M110 200q15-6 30 0t30 0t30 0t30 0" stroke="#fff" stroke-width="3" fill="none" opacity=".8"/>
+<g><rect x="380" y="150" width="8" height="24" fill="#8d5a2b"/><circle cx="384" cy="142" r="20" fill="#81c784"/><rect x="440" y="158" width="7" height="20" fill="#8d5a2b"/><circle cx="443" cy="150" r="16" fill="#a5d6a7"/></g>
+<g><circle cx="700" cy="195" r="6" fill="#f8bbd0"/><circle cx="725" cy="200" r="6" fill="#fff59d"/><circle cx="750" cy="194" r="6" fill="#ffccbc"/><circle cx="640" cy="198" r="6" fill="#fff"/></g>
+</svg>
+</div></div>
+<div class="wrap">
+<div class="card"><h3>Cara memakai website ini</h3>
+<ol style="margin:0;padding-left:22px"><li>Klik lingkaran huruf di bawah, mulai dari <b>D</b>.</li><li>Baca petunjuk, lalu kerjakan kegiatannya.</li><li>Kalau bingung, tanya Bapak/Ibu Guru.</li></ol></div>
+<h2 style="margin-top:22px">Alur petualanganmu</h2>
+<div class="path" id="path"></div>
+<div class="card"><h3>Tujuan Pembelajaran</h3><p style="margin:0 0 6px">Setelah belajar, peserta didik dapat:</p><ol style="margin:0;padding-left:22px"><li>Menyebutkan enam ragam bentang alam di Indonesia (gunung, dataran tinggi, dataran rendah, pantai, sungai, danau) dengan benar. (C1)</li><li>Mengelompokkan bentang alam menjadi daratan dan perairan serta menjelaskan minimal satu ciri setiap bentang alam dengan benar. (C2)</li><li>Menghubungkan karakteristik bentang alam dengan profesi masyarakat di sekitarnya (misalnya petani dan nelayan) dengan memberi minimal satu alasan untuk setiap pasangan. (C4)</li><li>Membuat karya satu bentang alam beserta profesi masyarakatnya dan satu pesan menjaga kelestariannya, lalu menjelaskan karyanya secara lisan sesuai rubrik. (C6)</li></ol></div>
+</div>
+</section>
+
+<!-- D -->
+<section class="pg" id="pg-ayo-mulai" style="--c:#a9cdf5;--on:#1d3557" hidden>
+<div class="band"><div class="wrap"><div class="tag">D</div><h2>Ayo Mulai</h2><p>Yuk, kita mulai dari sebuah cerita!</p></div></div>
+<div class="wrap">
+<div class="card"><h3>Cerita Raka dan Sari</h3><p>Saat libur sekolah, Raka dan Sari pergi ke rumah nenek. Mereka melihat sawah luas, menyeberangi sungai, lalu mendaki jalan berkelok. Dari jendela tampak gunung berkabut dan sebuah danau yang tenang. “Wah, pemandangannya banyak sekali!” kata Sari.</p></div>
+<div class="card" id="story"><h3>Cerita bergambar</h3><div id="sc" style="font-size:3.6rem;text-align:center;line-height:1.25" aria-hidden="true"></div><p id="st" style="text-align:center;font-weight:800;min-height:3.2em" aria-live="polite"></p><p style="text-align:center;margin:0"><button class="btn" id="sprev">← Sebelumnya</button> <button class="btn" id="snext">Lanjut →</button></p></div>
+<div class="card"><h3>Pertanyaan pemantik</h3><ul class="tidy"><li>Bentang alam apa saja yang dilihat Raka dan Sari?</li><li>Mana yang paling mirip dengan tempat tinggalmu?</li><li>Menurutmu, mengapa pemandangan di setiap tempat berbeda?</li></ul></div>
+<div class="role" style="margin-top:16px"><div class="g"><strong>👩‍🏫 Aktivitas guru</strong>Bercerita dengan cerita bergambar dan mengajukan pertanyaan pemantik.</div><div class="s"><strong>🧒 Aktivitas siswa</strong>Menyimak cerita bergambar, lalu menjawab pertanyaan secara lisan.</div></div>
+<div class="nextrow" id="nx-ayo-mulai"></div>
+</div>
+</section>
+
+<!-- H -->
+<section class="pg" id="pg-hubungkan" style="--c:#ffd3a3;--on:#4a2c00" hidden>
+<div class="band"><div class="wrap"><div class="tag">H</div><h2>Hubungkan dengan Hidupku</h2><p>Hubungkan cerita tadi dengan hidupmu.</p></div></div>
+<div class="wrap">
+<div class="grid"><div class="card"><div style="font-size:2.4rem">🌾</div><p>Petani menanam padi di dataran rendah.</p></div><div class="card"><div style="font-size:2.4rem">🍵</div><p>Petani teh memilih dataran tinggi yang sejuk.</p></div><div class="card"><div style="font-size:2.4rem">🎣</div><p>Nelayan mencari ikan di laut.</p></div></div>
+<div class="card"><h3>Budaya dan kearifan lokal di sekitarku</h3><p>[Isi dengan contoh dari daerah sekolah mitramu, misalnya cara bertani, tradisi, atau cara warga menjaga sungai atau pantai.]</p><p>Kecakapan hidup: menjaga kebersihan sungai dan pantai, tidak membuang sampah sembarangan, hemat air.</p></div>
+<div class="card"><h3>Pertanyaan “Hubungkan”</h3><ul class="tidy"><li>Bentang alam apa yang ada di dekat rumahmu?</li><li>Pernahkah kamu berlibur ke pantai atau gunung? Apa yang kamu lihat?</li><li>Apa pekerjaan orang di sekitar bentang alam itu?</li></ul>
+<label for="tanya"><b>Pertanyaanku tentang bentang alam:</b></label><textarea id="tanya" rows="2" placeholder="Contoh: Mengapa udara di gunung dingin?"></textarea></div>
+<div class="role" style="margin-top:16px"><div class="g"><strong>👩‍🏫 Aktivitas guru</strong>Membimbing siswa mengaitkan materi dengan pengalaman dan lingkungan, membantu merumuskan pertanyaan.</div><div class="s"><strong>🧒 Aktivitas siswa</strong>Bercerita tentang lingkungan dan liburannya, lalu menulis satu pertanyaan sendiri.</div></div>
+<div class="nextrow" id="nx-hubungkan"></div>
+</div>
+</section>
+
+<!-- E -->
+<section class="pg" id="pg-menjelajah" style="--c:#a8e6df;--on:#0d4a46" hidden>
+<div class="band"><div class="wrap"><div class="tag">E</div><h2>Ayo Menjelajah</h2><p>Ketuk kartu, lalu mainkan permainannya!</p></div></div>
+<div class="wrap">
+<div class="card"><h3>Kartu bentang alam</h3><div class="lands" id="lands"></div><div id="landInfo" aria-live="polite" style="margin-top:14px;font-weight:700">Ketuk salah satu kartu di atas 👆</div></div>
+<div class="card"><h3>Permainan 1: Cocokkan gambar dan nama</h3><div id="match"></div><p><button class="btn" id="cekMatch">Periksa jawabanku</button> <span id="hasilMatch" aria-live="polite"></span></p></div>
+<div class="card"><h3>Permainan 2 (LKPD): daratan atau perairan?</h3><div id="sort"></div></div>
+<div class="embed" id="game1"><div class="ph"><b>🎮</b>Game dari Wordwall / LearningApps (opsional)<br><span class="note">Ganti blok ini dengan kode sematan (iframe) dari layanannya.</span></div></div>
+<div class="role" style="margin-top:16px"><div class="g"><strong>👩‍🏫 Aktivitas guru</strong>Memandu eksplorasi, membantu siswa yang kesulitan, memberi penguatan.</div><div class="s"><strong>🧒 Aktivitas siswa</strong>Membaca kartu, mencocokkan, dan mengelompokkan bentang alam, lalu menyebut cirinya.</div></div>
+<div class="nextrow" id="nx-menjelajah"></div>
+</div>
+</section>
+
+<!-- T -->
+<section class="pg" id="pg-diskusi" style="--c:#c5e8a5;--on:#2c4a12" hidden>
+<div class="band"><div class="wrap"><div class="tag">T</div><h2>Ruang Diskusi</h2><p>Ceritakan temuanmu dan dengarkan temanmu!</p></div></div>
+<div class="wrap">
+<div class="card" id="padlet"><h3>📌 Papan Diskusi Padlet</h3><p>Gunakan tautan berikut untuk menuliskan hasil diskusi kelompok tentang ciri bentang alam dan profesi masyarakatnya.</p><p><a class="btn" href="https://padlet.com/awalia11_1/jelajah-bentang-alam-indonesia-s025bqovdqgdumrnv3zp" target="_blank" rel="noopener noreferrer">Buka Padlet →</a></p></div>
+<div class="card"><h3>Tugas kelompok</h3><p>Setiap kelompok mendapat satu bentang alam. Diskusikan ciri dan profesi masyarakatnya, lalu tulis hasilnya di Padlet.</p>
+<table><tr><th>Bentang alam</th><th>Profesi masyarakat</th><th>Mengapa cocok di sana?</th></tr>
+<tr><td>Dataran rendah</td><td>Petani padi</td><td><textarea rows="2" aria-label="Alasan dataran rendah"></textarea></td></tr>
+<tr><td>Dataran tinggi</td><td>Petani teh</td><td><textarea rows="2" aria-label="Alasan dataran tinggi"></textarea></td></tr>
+<tr><td>Pantai</td><td>Nelayan</td><td><textarea rows="2" aria-label="Alasan pantai"></textarea></td></tr>
+<tr><td>Danau</td><td>Pembudidaya ikan</td><td><textarea rows="2" aria-label="Alasan danau"></textarea></td></tr></table></div>
+<div class="card"><h3>Aturan diskusi santun</h3><ul class="tidy"><li>👂 Dengarkan teman yang berbicara.</li><li>✋ Angkat tangan sebelum berbicara.</li><li>💬 Gunakan kata yang baik dan sopan.</li><li>🤝 Hargai pendapat yang berbeda.</li></ul></div>
+<div class="card"><h3>Kata bantu presentasi</h3><p style="margin:0">“Kelompok kami membahas …” · “Cirinya …” · “Profesinya …” · “Alasannya …”</p></div>
+<div class="role" style="margin-top:16px"><div class="g"><strong>👩‍🏫 Aktivitas guru</strong>Mengatur kelompok, memantau Padlet, memberi umpan balik dan menjaga diskusi tetap santun.</div><div class="s"><strong>🧒 Aktivitas siswa</strong>Berdiskusi, menulis di Padlet, mempresentasikan, dan menanggapi kelompok lain.</div></div>
+<div class="nextrow" id="nx-diskusi"></div>
+</div>
+</section>
+
+<!-- I -->
+<section class="pg" id="pg-ikat" style="--c:#ffb8b5;--on:#5a1a1a" hidden>
+<div class="band"><div class="wrap"><div class="tag">I</div><h2>Ikat Ilmuku</h2><p>Mari ikat semua yang sudah dipelajari!</p></div></div>
+<div class="wrap">
+<div class="wrap">
+<div class="card">
+  <h3>📚 Materi Interaktif: Ikat Ilmuku</h3>
+  <p>
+    Yuk, pelajari materi Bentang Alam Indonesia
+    melalui media pembelajaran interaktif berikut!
+  </p>
+  <p style="text-align:center;margin-bottom:0">
+    <a class="btn"
+       href="https://canva.link/xppymwms1cor0ch"
+       target="_blank"
+       rel="noopener noreferrer">
+       📖 Buka Materi Canva →
+    </a>
+  </p>
+</div>
+<div class="card"><h3>Peta konsep</h3><div style="text-align:center;font-weight:800"><div style="display:inline-block;background:#ffb8b5;color:#5a1a1a;border-radius:99px;padding:8px 20px">Bentang Alam Indonesia</div>
+<div class="card"><h3>Peta konsep</h3><div style="text-align:center;font-weight:800"><div style="display:inline-block;background:#ffb8b5;color:#5a1a1a;border-radius:99px;padding:8px 20px">Bentang Alam Indonesia</div>
+<div class="grid" style="margin-top:12px"><div style="background:var(--soft);border-radius:16px;padding:10px">⛰️ Daratan<br><span class="note">gunung · dataran tinggi · dataran rendah · pantai<br>profesi: petani, nelayan, pemandu wisata</span></div><div style="background:var(--soft);border-radius:16px;padding:10px">💧 Perairan<br><span class="note">sungai · danau<br>profesi: pengemudi perahu, pembudidaya ikan</span></div></div></div></div>
+<div class="card"><h3>Infografis bentang alam</h3><div class="grid"><div style="background:var(--soft);border-radius:16px;padding:10px;text-align:center"><div style="font-size:2.2rem">🌋</div><b>Gunung</b><br><span class="note">Menjulang tinggi<br>Profesi: Petani sayur</span></div><div style="background:var(--soft);border-radius:16px;padding:10px;text-align:center"><div style="font-size:2.2rem">🍵</div><b>Dataran tinggi</b><br><span class="note">Datar dan sejuk<br>Profesi: Petani teh</span></div><div style="background:var(--soft);border-radius:16px;padding:10px;text-align:center"><div style="font-size:2.2rem">🌾</div><b>Dataran rendah</b><br><span class="note">Datar dan rendah<br>Profesi: Petani padi</span></div><div style="background:var(--soft);border-radius:16px;padding:10px;text-align:center"><div style="font-size:2.2rem">🏖️</div><b>Pantai</b><br><span class="note">Daratan di tepi laut, berpasir<br>Profesi: Petani garam</span></div><div style="background:var(--soft);border-radius:16px;padding:10px;text-align:center"><div style="font-size:2.2rem">🏞️</div><b>Sungai</b><br><span class="note">Air tawar mengalir<br>Profesi: Pengemudi perahu</span></div><div style="background:var(--soft);border-radius:16px;padding:10px;text-align:center"><div style="font-size:2.2rem">🛶</div><b>Danau</b><br><span class="note">Air tawar menggenang<br>Profesi: Pembudidaya ikan</span></div></div></div>
+<div class="card"><h3>Biar tidak keliru</h3><ul class="tidy"><li>Sungai mengalir, sedangkan danau menggenang.</li><li>Dataran tinggi tidak sama dengan gunung.</li><li>Laut airnya asin, sungai dan danau airnya tawar.</li></ul></div>
+<div class="card"><h3>Kuis konsep</h3><div id="quiz"></div><p id="skor" style="font-weight:800;margin:6px 0 0" aria-live="polite"></p></div>
+<div class="role" style="margin-top:16px"><div class="g"><strong>👩‍🏫 Aktivitas guru</strong>Memandu penyimpulan bersama, meluruskan salah paham, membagikan kuis.</div><div class="s"><strong>🧒 Aktivitas siswa</strong>Menyimpulkan bersama dan mengerjakan kuis.</div></div>
+<div class="nextrow" id="nx-ikat"></div>
+</div>
+</section>
+
+<!-- K -->
+<section class="pg" id="pg-karyaku" style="--c:#cfc9f5;--on:#2b2660" hidden>
+<div class="band"><div class="wrap"><div class="tag">K</div><h2>Karyaku</h2><p>Waktunya berkarya! Tunjukkan hasil jelajahmu.</p></div></div>
+<div class="wrap">
+<div class="card"><h3>Tantangan karya</h3><p style="margin:0">Pilih satu bentang alam, lalu buat <b>gambar</b> atau <b>miniatur</b> sederhana. Tunjukkan <b>profesi masyarakatnya</b> dan tulis <b>satu pesan agar bentang alam tetap terjaga</b>. Setelah selesai, ceritakan karyamu.</p></div>
+<div class="embed" id="unggah"><div class="ph"><b>📤</b>Tempat unggah karya (Google Forms atau Padlet)<br><span class="note">Ganti blok ini dengan kode sematan (iframe) dari layanannya.</span></div></div>
+<div class="card"><h3>Rubrik karya</h3><table><tr><th>Aspek</th><th>⭐⭐⭐ Sangat baik</th><th>⭐ Perlu bimbingan</th></tr>
+<tr><td>Ketepatan bentang alam</td><td>Ciri tepat dan lengkap</td><td>Belum menunjukkan ciri</td></tr>
+<tr><td>Profesi masyarakat</td><td>Sesuai dan dijelaskan</td><td>Belum ada profesi</td></tr>
+<tr><td>Pesan pelestarian</td><td>Jelas dan dari ide sendiri</td><td>Belum ada pesan</td></tr>
+<tr><td>Penjelasan lisan</td><td>Jelas: nama, ciri, profesi, pesan</td><td>Belum mampu menjelaskan</td></tr>
+<tr><td>Kerapian dan kreativitas</td><td>Rapi dan kreatif</td><td>Belum selesai</td></tr></table></div>
+<div class="card"><h3>Refleksiku</h3>
+<label for="r1"><b>Aku tahu …</b></label><textarea id="r1" rows="2"></textarea>
+<label for="rasa"><b>Aku merasa …</b></label><select id="rasa"><option>😄 Senang</option><option>🙂 Cukup paham</option><option>🤔 Masih bingung</option></select>
+<label for="r3"><b>Aku ingin mencoba …</b></label><textarea id="r3" rows="2"></textarea>
+<p class="note">Isian ini tidak tersimpan. Untuk mengumpulkan refleksi, sematkan Google Forms di sini.</p></div>
+<div class="role" style="margin-top:16px"><div class="g"><strong>👩‍🏫 Aktivitas guru</strong>Membimbing pembuatan karya, menilai dengan rubrik, memandu refleksi.</div><div class="s"><strong>🧒 Aktivitas siswa</strong>Membuat dan menjelaskan karya, mengunggahnya, lalu mengisi refleksi.</div></div>
+<div class="nextrow" id="nx-karyaku"></div>
+</div>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap">
+<b>PGSDUPICIBIRU2026 #dHeTik</b><br>
+Program Studi PGSD, Universitas Pendidikan Indonesia Kampus Cibiru<br>
+Desain Sistem Pembelajaran Digital · Dosen: Dr. Dede Trie Kurniawan, S.Si., M.Pd.<br>
+Pengembang: Awalia Safitri; Gayasal Agisni Putri; Risa Aulia Hermyanti; Riska Setiawati.
+</div></footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const P=[
+['beranda','Beranda','#a9cdf5','#1d3557'],
+['ayo-mulai','D · Ayo Mulai','#a9cdf5','#1d3557'],
+['hubungkan','H · Hubungkan','#ffd3a3','#4a2c00'],
+['menjelajah','E · Ayo Menjelajah','#a8e6df','#0d4a46'],
+['diskusi','T · Ruang Diskusi','#c5e8a5','#2c4a12'],
+['ikat','I · Ikat Ilmuku','#ffb8b5','#5a1a1a'],
+['karyaku','K · Karyaku','#cfc9f5','#2b2660']];
+const L=['D','H','E','T','I','K'];
+const DECO={'ayo-mulai':'📖🎬⭐','hubungkan':'🏡🌾🎣','menjelajah':'🔍🗺️🧭','diskusi':'💬🤝📌','ikat':'🧩💡🏆','karyaku':'🎨✂️🖍️'};
+Object.entries(DECO).forEach(([k,v])=>{
+  const d=document.createElement('div');d.className='deco';d.setAttribute('aria-hidden','true');
+  d.innerHTML=[...v.matchAll(/\p{Extended_Pictographic}\uFE0F?/gu)].map((m,i)=>`<span style="left:${[58,72,86][i]}%;top:${[18,52,12][i]}%;animation-delay:${i*.7}s">${m[0]}</span>`).join('');
+  document.querySelector('#pg-'+k+' .band').prepend(d);
+});
+function burst(el){
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  const r=el.getBoundingClientRect(),x=r.left+r.width/2,y=r.top+r.height/2;
+  ['⭐','🎉','✨','🌟','🎈','💫'].forEach((e,i)=>{
+    const s=document.createElement('span');s.textContent=e;
+    s.style.cssText=`position:fixed;left:${x}px;top:${y}px;font-size:22px;pointer-events:none;z-index:20`;
+    document.body.appendChild(s);
+    const a=i/6*Math.PI*2,dx=Math.cos(a)*70,dy=Math.sin(a)*70-20;
+    s.animate([{transform:'translate(0,0) scale(.6)',opacity:1},{transform:`translate(${dx}px,${dy}px) scale(1.2)`,opacity:0}],{duration:800,easing:'ease-out'}).onfinish=()=>s.remove();
+  });
+}
+$('#nav').innerHTML=P.map(p=>`<a href="#${p[0]}" data-p="${p[0]}" style="--c:${p[2]};--on:${p[3]}">${p[1]}</a>`).join('');
+$('#path').innerHTML=P.slice(1).map((p,i)=>`<a class="dot" href="#${p[0]}" style="--c:${p[2]};--on:${p[3]}"><i>${L[i]}</i><span>${p[1].split(' · ')[1]}</span></a>`).join('');
+P.slice(1).forEach((p,i)=>{
+  const prev=P[i],next=P[i+2];
+  $('#nx-'+p[0]).innerHTML=`<a class="btn" style="--c:#dde4ec;--on:#2d3b4a" href="#${prev[0]}">← Kembali</a>`+(next?`<a class="btn" style="--c:${next[2]};--on:${next[3]}" href="#${next[0]}">Lanjut ke ${next[1].split(' · ').pop()} →</a>`:`<a class="btn" style="--c:#a9cdf5;--on:#1d3557" href="#beranda">Ke Beranda 🏠</a>`);
+});
+function route(x){
+  const h=x||(location.hash||'#beranda').slice(1);
+  const id=P.some(p=>p[0]===h)?h:'beranda';
+  document.querySelectorAll('.pg').forEach(s=>s.hidden=s.id!=='pg-'+id);
+  document.querySelectorAll('#nav a').forEach(a=>{a.toggleAttribute('aria-current',a.dataset.p===id);if(a.dataset.p===id){a.setAttribute('aria-current','page');a.scrollIntoView({inline:'center',block:'nearest'})}});
+  window.scrollTo(0,0);
+}
+addEventListener('hashchange',()=>route());route();
+document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a)return;e.preventDefault();const id=a.getAttribute('href').slice(1);try{history.replaceState(null,'','#'+id)}catch(_){}route(id)});
+const th=document.documentElement,tb=$('#theme');
+function setTheme(t){th.dataset.theme=t;tb.textContent=t==='light'?'🌙':'☀️'}
+tb.onclick=()=>setTheme(th.dataset.theme==='light'?'dark':'light');
+
+const LD=[['🌋','Gunung','Menjulang tinggi, ada yang punya kawah. Contoh: Gunung Bromo.'],['🍵','Dataran tinggi','Datar dan sejuk, ada kebun teh. Contoh: Dieng.'],['🌾','Dataran rendah','Datar dan rendah, ada sawah luas.'],['🏖️','Pantai','Wilayah daratan di tepi laut, biasanya memiliki pasir dan berbatasan dengan air laut. Contoh: Pantai Kuta.'],['🏞️','Sungai','Air tawar mengalir dari tempat tinggi ke rendah.'],['🛶','Danau','Air tawar menggenang di cekungan. Contoh: Danau Toba.']];
+$('#lands').innerHTML=LD.map((l,i)=>`<button class="land" data-i="${i}" aria-pressed="false"><span>${l[0]}</span>${l[1]}</button>`).join('');
+document.querySelectorAll('.land').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.land').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  const l=LD[b.dataset.i];$('#landInfo').textContent=l[1]+': '+l[2];
+});
+
+const S=[['Gunung','D'],['Dataran tinggi','D'],['Dataran rendah','D'],['Pantai','D'],['Sungai','P'],['Danau','P']];
+$('#sort').innerHTML=S.map((s,i)=>`<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin:8px 0"><b>${s[0]}</b><span><button class="opt" style="display:inline-block;width:auto" data-i="${i}" data-v="D">⛰️ Daratan</button> <button class="opt" style="display:inline-block;width:auto" data-i="${i}" data-v="P">💧 Perairan</button></span></div>`).join('');
+document.querySelectorAll('#sort .opt').forEach(b=>b.onclick=()=>{
+  const ok=b.dataset.v===S[b.dataset.i][1];
+  b.classList.remove('right','wrong');b.classList.add(ok?'right':'wrong');if(ok)burst(b);
+});
+
+const Q=[['Bagian bumi yang menjulang tinggi dan ada yang punya kawah disebut …',['Danau','Gunung','Sungai'],1],['Air tawar yang mengalir dari tempat tinggi ke tempat rendah disebut …',['Sungai','Pantai','Danau'],0],['Dataran yang letaknya tinggi dan udaranya sejuk disebut …',['Dataran rendah','Dataran tinggi','Pantai'],1],['Nelayan mencari ikan di …',['Gunung','Dataran tinggi','Laut'],2],['Cara menjaga sungai tetap bersih adalah …',['Membuang sampah ke sungai','Membuang sampah pada tempatnya','Membiarkan sampah menumpuk'],1]];
+let sk=0,jw=0;
+$('#quiz').innerHTML=Q.map((q,i)=>`<p style="margin:10px 0 2px"><b>${i+1}. ${q[0]}</b></p>`+q[1].map((o,j)=>`<button class="opt" data-q="${i}" data-j="${j}">${o}</button>`).join('')).join('');
+document.querySelectorAll('#quiz .opt').forEach(b=>b.onclick=()=>{
+  const i=+b.dataset.q,g=[...document.querySelectorAll(`#quiz .opt[data-q="${i}"]`)];
+  if(g.some(x=>x.disabled))return;
+  g.forEach(x=>x.disabled=true);
+  const ok=+b.dataset.j===Q[i][2];
+  b.classList.add(ok?'right':'wrong');if(!ok)g[Q[i][2]].classList.add('right');if(ok)burst(b);
+  if(ok)sk++;jw++;
+  if(jw===Q.length)$('#skor').textContent=`Skormu ${sk} dari ${Q.length} ${sk===Q.length?'🏆 Hebat!':'👍 Ayo coba lagi!'}`;
+});
+const names=['Gunung','Dataran tinggi','Dataran rendah','Pantai','Sungai','Danau'];
+const M=[['🌋','Menjulang tinggi, ada yang punya kawah','Gunung'],['🍵','Datar, sejuk, ada kebun teh','Dataran tinggi'],['🌾','Datar, rendah, ada sawah luas','Dataran rendah'],['🏖️','Daratan berpasir di tepi laut','Pantai'],['🏞️','Air tawar mengalir ke hilir','Sungai'],['🛶','Air tawar menggenang luas','Danau']];
+$('#match').innerHTML=M.map((m,i)=>`<div style="display:flex;gap:12px;align-items:center;margin:8px 0"><div style="font-size:2.2rem;width:52px;text-align:center">${m[0]}</div><div style="flex:1"><div>${m[1]}</div><select id="m${i}" aria-label="Nama untuk: ${m[1]}"><option value="">Pilih nama…</option>${names.map(n=>`<option>${n}</option>`).join('')}</select></div></div>`).join('');
+$('#cekMatch').onclick=()=>{let b=0;M.forEach((m,i)=>{const e=$('#m'+i),ok=e.value===m[2];if(ok)b++;e.style.borderColor=e.value?(ok?'#2f9e5b':'#e8643a'):''});$('#hasilMatch').textContent=b===6?'Hebat! Semua benar 🎉':`Benar ${b} dari 6. Coba perbaiki yang berwarna merah.`;if(b===6)burst($('#cekMatch'))};
+const FR=[['🚗🏡','Raka dan Sari pergi ke rumah nenek.'],['🌾🌾','Mereka melihat sawah yang luas.'],['🏞️🚗','Mobil menyeberangi sungai.'],['⛰️☁️','Jalan berkelok naik ke arah gunung berkabut.'],['🌋🛶','Di dekatnya ada danau yang tenang. “Wah, banyak sekali pemandangannya!” kata Sari.']];
+let fi=0;function showF(){$('#sc').textContent=FR[fi][0];$('#st').textContent=`(${fi+1}/${FR.length}) `+FR[fi][1];$('#sprev').disabled=fi===0;$('#snext').disabled=fi===FR.length-1}
+$('#sprev').onclick=()=>{if(fi>0){fi--;showF()}};$('#snext').onclick=()=>{if(fi<FR.length-1){fi++;showF()}};showF();
+</script>
+</body>
+</html>
